@@ -29,7 +29,7 @@ return [
         'string' => 'The :attribute must be between :min and :max characters.',
         'array' => 'The :attribute must have between :min and :max items.',
     ],
-    'boolean' => 'The :attribute field must be true or false.',
+    'boolean' => ':attribute　がエラーです。',
     'confirmed' => 'The :attribute confirmation does not match.',
     'date' => 'The :attribute is not a valid date.',
     'date_equals' => 'The :attribute must be a date equal to :date.',
@@ -78,7 +78,7 @@ return [
     'max' => [
         'numeric' => 'The :attribute may not be greater than :max.',
         'file' => 'The :attribute may not be greater than :max kilobytes.',
-        'string' => 'The :attribute may not be greater than :max characters.',
+        'string' => ':attribute は :max 以下で入力してください。',
         'array' => 'The :attribute may not have more than :max items.',
     ],
     'mimes' => 'The :attribute must be a file of type: :values.',
@@ -94,7 +94,7 @@ return [
     'numeric' => 'The :attribute must be a number.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
+    'required' => ':attribute を入力してください。',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -144,6 +144,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'memo title',
+        'contents' => 'memo',
+        'favorite' => 'お気に入り',
+    ],
 
 ];
